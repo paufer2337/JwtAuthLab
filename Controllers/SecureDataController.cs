@@ -12,7 +12,7 @@ namespace JwtAuthLab.Controllers;
 [Authorize]
 
 
-public class SafeDataController : ControllerBase
+public class SecureDataController : ControllerBase
 {
     
     [HttpGet]
