@@ -18,8 +18,7 @@ var jwtSettings = builder.Configuration
 
 var signingKey = Encoding.UTF8.GetBytes(jwtSettings.Secret);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+// Add services to the container
 builder.Services.AddControllers();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
